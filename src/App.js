@@ -8,9 +8,14 @@ import ContactUs from "./components/pages/ContactUs";
 import "./App.css";
 import Form from "./components/pages/Form";
 
-function App() {
+//AWS Auth
+
+import { withAuthenticator } from "@aws-amplify/ui-react";
+
+function App({ signOut }) {
   return (
     <div className="body-wrap">
+      <button onClick={signOut}>Sign Out</button>
       <Router>
         <Layout>
           <Switch>
@@ -25,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
