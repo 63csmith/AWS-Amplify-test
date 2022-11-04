@@ -1,10 +1,11 @@
 .footer {
-    background: #37387a;
-    color: #fff;
+    background: #fdfdfd;
+    color: rgb(0, 0, 0);
     padding: 2rem 0;
     text-align: center;
     font-size: .8rem;
     color: rgba(white,.4);
+    margin-top: 0;
 }
 
 .footer ul {
@@ -22,9 +23,9 @@
     padding: .4rem .7rem;
     font-size: .9rem;
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
 }
 
 .footer a:hover {
-    color: rgb(214, 214, 214);
+    color: rgb(173, 14, 14);
 }

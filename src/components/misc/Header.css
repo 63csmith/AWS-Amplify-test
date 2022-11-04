@@ -1,21 +1,30 @@
+/* Edit to Parent container */
+.bg-container{
+    padding: 0;
+    margin: 0;
+    min-height: max-content;
+}
+
+
+
 header{
     color: white;
-    background: #37387a;
-    background-image: url('../../images/space.jpg');
-    min-height: 50vh;
-    padding-top: 20vh;
+    background: #000000;
+    background-image: url('../../images/film.jpg');
+    min-height: 100vh;
+    padding-top: 30vh;
     text-align: center;
     position: relative;
     z-index: 1;
     overflow: hidden;
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    /* background-repeat: no-repeat; Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
 }
   
 header h1{
     font-size: 3rem;
-    margin: 0 0 1rem;
+    margin: 0 0 0rem;
 }
 
 header h2{
@@ -27,3 +36,5 @@ header h2{
 header a{
     color: #ffff;
 }
+
+
