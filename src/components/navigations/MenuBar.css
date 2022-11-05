@@ -15,7 +15,6 @@
   
 .header ul {
     margin: 0;
-    /* padding: 2rem; */
     list-style: none;
     overflow: hidden;
     background-color: #fff;
@@ -88,6 +87,14 @@
     top: -5px;
 }
   
+
+.signOutBtn{
+background-color: #000;
+color: #fff;
+padding: 12px 12px;
+text-align: center;
+    
+}
 /* menu btn */  
 .header .menu-btn {
     display: none;

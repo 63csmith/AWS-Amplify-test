@@ -1,7 +1,6 @@
 {
   "name": "react-website",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^3.5.11",
     "@material-ui/core": "^4.11.3",
@@ -23,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cruip/open-react-template.git"
+    "url": "https://github.com/63csmith/AWS-Amplify-test"
   },
   "eslintConfig": {
     "extends": [

@@ -1,8 +1,9 @@
 import React from "react";
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 import "./MenuBar.css";
 
-const MenuBar = () => {
+function MenuBar({ signOut }) {
   return (
     <nav className="header">
       <div className="nav-wrapper">
@@ -13,7 +14,6 @@ const MenuBar = () => {
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
-
         <ul className="menu">
           <li>
             <a href="/">Home</a>
@@ -25,12 +25,15 @@ const MenuBar = () => {
             <a href="/AboutUs">About Us</a>
           </li>
           <li>
-            <a href="/ContactUs">Contact Us</a>
+            <a href="/ContactUS">Contact Us</a>
+          </li>
+          <li>
+            <a onClick={signOut}>Sign Out</a>
           </li>
         </ul>
       </div>
     </nav>
   );
-};
+}
 
-export default MenuBar;
+export default withAuthenticator(MenuBar);

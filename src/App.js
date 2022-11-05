@@ -14,24 +14,24 @@ import { Storage } from "aws-amplify";
 import { withAuthenticator } from "@aws-amplify/ui-react";
 import { useState } from "react";
 
-function App({ signOut }) {
-  const [fileData, setFileData] = useState();
-  const [fileStatus, setFileStatus] = useState(false);
+function App() {
+  // const [fileData, setFileData] = useState();
+  // const [fileStatus, setFileStatus] = useState(false);
 
-  const uploadFile = async () => {
-    const result = await Storage.put(fileData.name, fileData, {
-      contentType: fileData.type,
-    });
-    setFileStatus(true);
-    console.log(21, result);
-  };
+  // const uploadFile = async () => {
+  //   const result = await Storage.put(fileData.name, fileData, {
+  //     contentType: fileData.type,
+  //   });
+  //   setFileStatus(true);
+  //   console.log(21, result);
+  // };
 
   return (
     <div className="body-wrap">
-      <button onClick={signOut}>Sign Out</button>
+      {/* <button onClick={signOut}>Sign Out</button>
       <input type="file" onChange={(e) => setFileData(e.target.files[0])} />
       <button onClick={uploadFile}>Upload</button>
-      {fileStatus ? "File Uploaded" : ""}
+      {fileStatus ? "File Uploaded" : ""} */}
       <Router>
         <Layout>
           <Switch>
